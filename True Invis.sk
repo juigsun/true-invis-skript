@@ -1,0 +1,10 @@
+# By bangsall
+
+on death of player:
+	if attacker has potion invisibility:
+        if victim has potion invisibility:
+		    set death message to "&k123&r was slain by &k123"
+        else:
+            set death message to "%victim% was slain by &k123"
+    else if victim has potion invisibility:
+        set death message to "&k123&r was slain by %attacker%"
